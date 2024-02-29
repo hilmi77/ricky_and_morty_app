@@ -1,0 +1,49 @@
+// colors
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #383839;
+
+// Fontlar
+$base-font-family: 'Open Sans', sans-serif;
+
+// Temel Reset Ayarları
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// HTML ve Body Ayarları
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $base-font-family; // Önceden tanımladığınız değişken
+  color: $secondary-color; // Önceden tanımladığınız değişken
+  line-height: 1.6;
+  background-color: $background-color; // Veya projenizin arka plan rengine göre ayarlayın
+}
+
+// A linkleri için genel stil
+a {
+  color: $secondary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Görüntüler için genel stil
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Daha fazlası...
+
