@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./CharacterCard.scss";
 
 interface CharacterCardProps {
@@ -23,7 +24,9 @@ const CharacterCard = ({
   return (
     <div className="card" key={id}>
       <img src={image} alt={name} />
-      <h1 className="card-name">{name}</h1>
+      <Link to={`/character/${id}`} className="card-name">
+        {name}
+      </Link>
       <div className="status-container">
         <div
           className="status-dot"
