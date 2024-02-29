@@ -2,6 +2,7 @@
 $primary-color: #007bff;
 $secondary-color: #6c757d;
 $background-color: #383839;
+$white-color: #fff;
 
 // Fontlar
 $base-font-family: 'Open Sans', sans-serif;
@@ -14,19 +15,25 @@ $base-font-family: 'Open Sans', sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 
-// HTML ve Body Ayarları
+
 html,
 body {
   height: 100%;
   width: 100%;
+
 }
 
 body {
-  font-family: $base-font-family; // Önceden tanımladığınız değişken
-  color: $secondary-color; // Önceden tanımladığınız değişken
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer ve Edge */
+  font-family: $base-font-family; 
+  color: $white-color;
   line-height: 1.6;
-  background-color: $background-color; // Veya projenizin arka plan rengine göre ayarlayın
+  background-color: $background-color; 
 }
 
 // A linkleri için genel stil
@@ -36,6 +43,7 @@ a {
 
   &:hover {
     text-decoration: none;
+    color: $white-color;
   }
 }
 

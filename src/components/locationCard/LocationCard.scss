@@ -5,14 +5,16 @@
   padding: 20px;
   margin: 10px 0;
   background-color: rgb(51, 49, 59);
-  width:320px;
+  min-width:500px;
   min-height: 250px;
-  h3 {
+  h2 {
     margin: 0 0 10px 0;
+    white-space: nowrap;
   }
 
   p {
     margin: 5px 0;
+    white-space: nowrap;
   }
 
   a {
