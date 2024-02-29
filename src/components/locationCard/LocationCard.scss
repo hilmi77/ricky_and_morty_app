@@ -1,0 +1,27 @@
+
+.location-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: rgb(51, 49, 59);
+  width:320px;
+  min-height: 250px;
+  h3 {
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
