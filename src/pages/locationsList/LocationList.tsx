@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchLocations } from "../../service/axios";
 import LocationCard from "../../components/locationCard/LocationCard";
 import "./LocationList.scss";

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./CharacterCard.scss";
 import { useDispatch, useSelector } from "react-redux";

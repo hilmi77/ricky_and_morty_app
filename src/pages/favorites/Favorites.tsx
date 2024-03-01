@@ -1,4 +1,3 @@
-import React from "react";
 import { useSelector } from "react-redux";
 import { selectFavorites } from "../../features/favoritesSlice";
 import CharacterCard from "../../components/characterCard/CharacterCard";
