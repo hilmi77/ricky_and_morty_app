@@ -10,4 +10,5 @@ TypeScript
 SCSS
 Rick and Morty API
 
-                                 ![Location Character Page](./src/assets/images/ekran-görüntüsü.png)
+                                 
+![Ekran görüntüsü 2024-03-01 110808](https://github.com/hilmi77/ricky_and_morty_app/assets/120317069/5738a69b-d5b7-492a-9470-b9fc0020e2f2)
