@@ -11,8 +11,11 @@ SCSS
 Rick and Morty API
 
 <<<<<<< HEAD
-                      (./src/assets/images/ekran-görüntüsü.png)
+(./src/assets/images/ekran-görüntüsü.png)
 =======
-                                 
+
 ![Ekran görüntüsü 2024-03-01 110808](https://github.com/hilmi77/ricky_and_morty_app/assets/120317069/5738a69b-d5b7-492a-9470-b9fc0020e2f2)
->>>>>>> 45c677635bfd3fe30b4d6112de4158fb23460577
+
+> > > > > > > 45c677635bfd3fe30b4d6112de4158fb23460577
+
+---> Live Site : https://rickandmorty92.netlify.app
