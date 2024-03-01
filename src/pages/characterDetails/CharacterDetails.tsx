@@ -65,6 +65,7 @@ const CharacterDetails = () => {
       <Link to="/" className="back-to-location">
         Back to Locations
       </Link>
+
       {character && (
         <>
           <h1>Character Details</h1>
