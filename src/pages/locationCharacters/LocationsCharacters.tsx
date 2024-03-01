@@ -5,7 +5,6 @@ import CharacterCard from "../../components/characterCard/CharacterCard";
 import "./LocationCharacters.scss";
 import Pagination from "../../components/pagination/Pagination";
 
-// Karakter tipini tanımlama
 interface Character {
   id: string;
   name: string;
@@ -23,7 +22,7 @@ const LocationCharacters: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<string>("");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const [itemsPerPage] = useState<number>(5);
+  const [itemsPerPage] = useState<number>(4);
 
   useEffect(() => {
     const getCharacters = async () => {
@@ -72,9 +71,14 @@ const LocationCharacters: React.FC = () => {
   return (
     <>
       <h1 className="title">LOCATİON CHARACTERS</h1>
-      <Link to="/" className="back-link">
-        Back to Locations
-      </Link>
+      <div className="nav-link">
+        <Link to="/" className="back-link">
+          Back to Locations
+        </Link>
+        <Link to="/favorites" className="back-link">
+          Go to Favorites
+        </Link>
+      </div>
       <div className="filter-container">
         <input
           className="search-input"
@@ -90,15 +94,23 @@ const LocationCharacters: React.FC = () => {
         >
           <option value="">All Status</option>
           <option value="Alive">Alive</option>
-          {/* <option value="Dead">Dead</option> */}
+          <option value="Dead">Dead</option>
           <option value="unknown">Unknown</option>
         </select>
       </div>
 
       <div className="characters-container">
-        {currentItems.map((character) => (
-          <CharacterCard key={character.id} {...character} />
-        ))}
+        {currentItems.length > 0 ? (
+          currentItems.map((character) => (
+            <CharacterCard key={character.id} {...character} />
+          ))
+        ) : (
+          <p className="no-characters-message">
+            {statusFilter
+              ? `No characters found with status "${statusFilter}".`
+              : "No characters found."}
+          </p>
+        )}
       </div>
 
       <Pagination

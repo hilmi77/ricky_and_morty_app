@@ -6,12 +6,17 @@
   padding: 20px 100px;
 
 }
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .back-link {
 
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px 20px;
- margin-left: 680px;
   text-decoration: none;
   color: #787879;
 
@@ -58,7 +63,7 @@
 
 
 
-/* Placeholder stilini özelleştirme */
+
 .search-input::placeholder {
   color: #999;
 }
@@ -86,4 +91,10 @@
       background-color: #5f5f60;
     }
   }
+}
+.no-characters-message {
+  color: #d9534f;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
 }
