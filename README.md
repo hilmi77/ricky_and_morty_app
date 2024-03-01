@@ -10,4 +10,4 @@ TypeScript
 SCSS
 Rick and Morty API
 
-                                 ![Location Character Page](./src/assets/images/ekran-görüntüsü.png)
+                      (./src/assets/images/ekran-görüntüsü.png)

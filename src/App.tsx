@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Favorites from "../pages/favorites/Favorites";
-import LocationList from "../pages/locationsList/LocationList";
-import CharacterDetails from "../pages/characterDetails/CharacterDetails";
-import LocationsCharacters from "../pages/locationCharacters/LocationsCharacters";
+import Favorites from "./pages/favorites/Favorites";
+import LocationList from "./pages/locationsList/LocationList";
+import CharacterDetails from "./pages/characterDetails/CharacterDetails";
+import LocationsCharacters from "./pages/locationCharacters/LocationsCharacters";
 
 const App = () => {
   return (
