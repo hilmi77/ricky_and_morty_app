@@ -16,15 +16,7 @@ export const fetchLocations = async ()=>{
   }
 }
 
-export const fetchLocationById = async (id: number) => {
-  try {
-    const response = await api.get(`/location/${id}`);
-    return response.data;
-  }catch (error) {
-    console.error(`Error fetching location by id ${id}`, error);
-    throw error;
-  }
-}
+
 
 export const fetchCharacters = async (ids: string) => {
   try {
@@ -48,3 +40,4 @@ export const fetchCharactersByLocation = async (locationId: number) => {
     throw error;
   }
 };
+
